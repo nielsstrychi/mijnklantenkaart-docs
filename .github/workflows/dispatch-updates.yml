@@ -1,0 +1,24 @@
+name: Dispatch Docs Update
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Frontend and Backend Repos
+        run: |
+          # Update Frontend
+          curl -X POST -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/nielsstrychi/mijnklantenkaart-frontend/dispatches \
+          -d '{"event_type": "docs_updated"}'
+
+          # Update Backend
+          curl -X POST -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/nielsstrychi/mijnklantenkaart-backend/dispatches \
+          -d '{"event_type": "docs_updated"}'
