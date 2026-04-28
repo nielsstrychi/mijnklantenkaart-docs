@@ -62,7 +62,7 @@ const TicketCard = ({ ticket }: { ticket: Ticket }) => {
       })}
       style={{
         borderLeft: `4px solid ${getPriorityColor(ticket.priority)}`,
-        ...(isBlocked ? { border: '2px solid red' } : {})
+        ...(isBlocked ? { outline: '2px solid red', outlineOffset: '-2px' } : {})
       }}
     >
       <div className="card__header">
