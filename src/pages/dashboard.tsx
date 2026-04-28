@@ -41,8 +41,9 @@ const getPriorityWeight = (priority: string) => {
 };
 
 const getDaysOld = (dateString: string) => {
-  const diffMs = new Date().getTime() - new Date(dateString).getTime();
-  return Math.max(0, Math.floor(diffMs / (1000 * 60 * 60 * 24)));
+  const diffTime = Math.abs(new Date().getTime() - new Date(dateString).getTime());
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  return diffDays;
 };
 
 const isLeaseExpired = (leaseUntil: string) => {
@@ -62,7 +63,7 @@ const TicketCard = ({ ticket }: { ticket: Ticket }) => {
       })}
       style={{
         borderLeft: `4px solid ${getPriorityColor(ticket.priority)}`,
-        ...(isBlocked ? { outline: '2px solid red', outlineOffset: '-2px' } : {})
+        ...(isBlocked ? { border: '2px solid red' } : {})
       }}
     >
       <div className="card__header">
