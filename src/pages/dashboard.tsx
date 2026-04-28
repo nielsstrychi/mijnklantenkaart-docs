@@ -41,9 +41,8 @@ const getPriorityWeight = (priority: string) => {
 };
 
 const getDaysOld = (dateString: string) => {
-  const diffTime = Math.abs(new Date().getTime() - new Date(dateString).getTime());
-  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-  return diffDays;
+  const diffMs = new Date().getTime() - new Date(dateString).getTime();
+  return Math.max(0, Math.floor(diffMs / (1000 * 60 * 60 * 24)));
 };
 
 const isLeaseExpired = (leaseUntil: string) => {
