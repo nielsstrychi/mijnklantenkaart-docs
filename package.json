@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
+    "prestart": "tsx scripts/readTickets.ts",
     "start": "docusaurus start",
+    "prebuild": "tsx scripts/readTickets.ts",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -24,7 +26,13 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.2",
-    "@docusaurus/types": "3.9.2"
+    "@docusaurus/types": "3.9.2",
+    "@types/node": "^25.6.0",
+    "glob": "^13.0.6",
+    "gray-matter": "^4.0.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
   },
   "browserslist": {
     "production": [

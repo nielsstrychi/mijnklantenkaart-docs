@@ -1,0 +1,90 @@
+[
+  {
+    "id": "TASK-106",
+    "title": "Refactor Payment Gateway",
+    "status": "review",
+    "priority": "medium",
+    "project": "MarketingBird",
+    "owner": "reviewer-agent",
+    "updated": "2024-04-24T09:00:00.000Z",
+    "lease_until": "",
+    "estimate": "2d",
+    "depends_on": "",
+    "blocked_by": "",
+    "tags": [
+      "payments"
+    ],
+    "folder": "review"
+  },
+  {
+    "id": "TASK-104",
+    "title": "Improve Email System",
+    "status": "ready",
+    "priority": "high",
+    "project": "MijnKlantenKaart",
+    "owner": "coder-agent",
+    "updated": "2024-04-25T10:00:00.000Z",
+    "lease_until": "",
+    "estimate": "3d",
+    "depends_on": "",
+    "blocked_by": "",
+    "tags": [
+      "email",
+      "backend"
+    ],
+    "folder": "ready"
+  },
+  {
+    "id": "TASK-105",
+    "title": "Update Login Screen",
+    "status": "in_progress",
+    "priority": "critical",
+    "project": "Aline",
+    "owner": "planner-agent",
+    "updated": "2024-04-26T14:00:00.000Z",
+    "lease_until": "2024-04-28T14:00:00.000Z",
+    "estimate": "1d",
+    "depends_on": "",
+    "blocked_by": "",
+    "tags": [
+      "ui",
+      "auth"
+    ],
+    "folder": "in_progress"
+  },
+  {
+    "id": "TASK-108",
+    "title": "Fix Header Typo",
+    "status": "done",
+    "priority": "low",
+    "project": "Aline",
+    "owner": "qa-agent",
+    "updated": "2024-04-27T08:00:00.000Z",
+    "lease_until": "",
+    "estimate": "1h",
+    "depends_on": "",
+    "blocked_by": "",
+    "tags": [
+      "bug"
+    ],
+    "folder": "done"
+  },
+  {
+    "id": "TASK-107",
+    "title": "Database Migration",
+    "status": "blocked",
+    "priority": "high",
+    "project": "MijnKlantenKaart",
+    "owner": "coder-agent",
+    "updated": "2024-04-20T11:00:00.000Z",
+    "lease_until": "",
+    "estimate": "5d",
+    "depends_on": "",
+    "blocked_by": "TASK-102",
+    "tags": [
+      "db",
+      "migration"
+    ],
+    "folder": "blocked"
+  }
+]
