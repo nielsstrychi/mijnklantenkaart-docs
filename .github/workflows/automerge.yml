@@ -1,0 +1,51 @@
+name: Auto-merge
+on:
+  push:
+    branches:
+      - '**'
+      - '!master'
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  on-success:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+
+      - name: Determine Target Branch
+        id: branch
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "BRANCH_NAME=${{ github.head_ref }}" >> $GITHUB_ENV
+          else
+            echo "BRANCH_NAME=${{ github.ref_name }}" >> $GITHUB_ENV
+          fi
+
+      - name: Tell git we want the target branch
+        run: git remote set-branches --add origin ${{ env.BRANCH_NAME }}
+
+      - name: Fetch the target branch
+        run: git fetch origin ${{ env.BRANCH_NAME }}
+
+
+      - name: Merge target branch into master
+        run: |
+          git merge origin/${{ env.BRANCH_NAME }} --no-edit || true
+
+      - name: Push current head to master
+        run: |
+          for i in {1..5}; do
+            git pull --rebase origin master && git push origin master && break || sleep 5
+          done
