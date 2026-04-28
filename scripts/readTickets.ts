@@ -19,7 +19,7 @@ interface TicketData {
   folder: string;
 }
 
-const ticketsDir = path.join(process.cwd(), 'tickets');
+const ticketsDir = path.join(process.cwd(), 'docs', 'tickets');
 const outputDir = path.join(process.cwd(), 'generated');
 const outputFile = path.join(outputDir, 'tickets.json');
 
@@ -29,7 +29,7 @@ function generateTicketsJson() {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-  const files = globSync(`${ticketsDir}/**/*.md`);
+  const files = globSync(`${ticketsDir}/**/*.md`, { ignore: `${ticketsDir}/archive/**` });
   const tickets: TicketData[] = [];
 
   for (const file of files) {
