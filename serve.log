@@ -1,0 +1,10 @@
+
+> temp-docs@0.0.0 serve
+> docusaurus serve
+
+
+ ------------------------------------------------------------------------------                                                                                                         Update available 3.9.2 → 3.10.1                                                                                                                 To upgrade Docusaurus packages with the latest version, run the                                       following command:                                        `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest                @docusaurus/module-type-aliases@latest @docusaurus/types@latest`                                                                                         ------------------------------------------------------------------------------
+
+[WARNING] The `siteConfig.onBrokenMarkdownLinks` config option is deprecated and will be removed in Docusaurus v4.
+Please migrate and move this option to `siteConfig.markdown.hooks.onBrokenMarkdownLinks` instead.
+[SUCCESS] Serving "build" directory at: http://localhost:3000/mijnklantenkaart-docs/
