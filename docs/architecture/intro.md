@@ -1,1 +1,3 @@
-# Architecture Overview\n\nThis section contains the architecture documentation for MijnKlantenkaart.
+# Architecture Overview
+
+This section contains the architecture documentation for MijnKlantenkaart.

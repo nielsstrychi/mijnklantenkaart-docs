@@ -2,15 +2,6 @@
 
 This repository serves as the central Docusaurus documentation site ("Single Source of Truth") for the MijnKlantenkaart project.
 
-## Architecture Documentation
-
-The documentation is organized into the following main sections:
-- **Architecture**: Overall system design and architecture.
-- **Backend**: Spring Boot API backend documentation.
-- **Frontend**: Next.js React frontend documentation.
-- **API**: API endpoints and integration documentation.
-- **Database**: Database schema and data models.
-
 ## Using this repository as a Git Submodule
 
 The Frontend and Backend repositories should include this repository as a submodule.

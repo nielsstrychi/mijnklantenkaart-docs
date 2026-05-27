@@ -89,6 +89,7 @@ const config = {
             label: 'Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/dashboard', label: 'Dashboard', position: 'left'},
           {
             href: 'https://github.com/nielsstrychi/mijnklantenkaart',
             label: 'GitHub',

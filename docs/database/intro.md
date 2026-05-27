@@ -1,1 +1,3 @@
-# Database Documentation\n\nThis section contains the database documentation for MijnKlantenkaart.
+# Database Documentation
+
+This section contains the database documentation for MijnKlantenkaart.

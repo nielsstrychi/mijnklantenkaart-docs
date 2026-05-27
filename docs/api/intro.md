@@ -1,1 +1,3 @@
-# API Documentation\n\nThis section contains the API documentation for MijnKlantenkaart.
+# API Documentation
+
+This section contains the API documentation for MijnKlantenkaart.
