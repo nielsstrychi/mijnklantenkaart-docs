@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'mijnklantenkaart-docs',
+  title: 'MijnKlantenkaart Docs',
   tagline: 'Single Source of Truth',
   favicon: 'img/favicon.ico',
 
@@ -86,12 +86,11 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'docsSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/dashboard', label: 'Dashboard', position: 'left'},
           {
-            href: 'https://github.com/nielsstrychi/mijnklantenkaart-docs',
+            href: 'https://github.com/nielsstrychi/mijnklantenkaart',
             label: 'GitHub',
             position: 'right',
           },
@@ -104,25 +103,16 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/business/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Architecture',
+                to: '/docs/architecture/intro',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Backend',
+                to: '/docs/backend/intro',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Frontend',
+                to: '/docs/frontend/intro',
               },
             ],
           },
@@ -135,7 +125,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/nielsstrychi/mijnklantenkaart-docs',
+                href: 'https://github.com/nielsstrychi/mijnklantenkaart',
               },
             ],
           },

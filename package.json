@@ -1,12 +1,10 @@
 {
-  "name": "temp-docs",
+  "name": "mijnklantenkaart-docs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "prestart": "tsx scripts/readTickets.ts",
     "start": "docusaurus start",
-    "prebuild": "tsx scripts/readTickets.ts",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",

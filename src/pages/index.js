@@ -15,13 +15,12 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">commit from master project worked</p>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/business/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/docs/architecture/intro">
+            View Documentation ⏱️
           </Link>
         </div>
       </div>
@@ -34,7 +33,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Documentation for MijnKlantenkaart">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
