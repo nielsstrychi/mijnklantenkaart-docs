@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmijnklantenkaart_docs=globalThis.webpackChunkmijnklantenkaart_docs||[]).push([[647],{7121(a,e,s){s.r(e),s.d(e,{default:()=>i});s(6540);var n=s(4164),r=s(7559),t=s(5500),c=s(2831),l=s(1656),u=s(4848);function i(a){return(0,u.jsx)(t.e3,{className:(0,n.A)(r.G.wrapper.docsPages),children:(0,u.jsx)(l.A,{children:(0,c.v)(a.route.routes)})})}}}]);
