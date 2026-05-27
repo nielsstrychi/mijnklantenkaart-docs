@@ -35,6 +35,24 @@
     "folder": "ready"
   },
   {
+    "id": "TEST",
+    "title": "TEST",
+    "status": "TEST",
+    "priority": "critical",
+    "project": "TEST",
+    "owner": "TEST",
+    "updated": "2024-04-26T14:00:00.000Z",
+    "lease_until": "2024-04-28T14:00:00.000Z",
+    "estimate": "1d",
+    "depends_on": "",
+    "blocked_by": "",
+    "tags": [
+      "ui",
+      "auth"
+    ],
+    "folder": "in_progress"
+  },
+  {
     "id": "TASK-105",
     "title": "Update Login Screen",
     "status": "in_progress",
