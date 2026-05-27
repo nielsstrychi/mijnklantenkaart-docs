@@ -18,4 +18,4 @@ Start the server using:
 
 Generate static content into the `build` directory:
 `npm run build`
-build
+
