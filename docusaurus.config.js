@@ -104,16 +104,16 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Architecture',
+                label: 'Business Analysis',
+                to: '/docs/business/intro',
+              },
+              {
+                label: 'Develop',
                 to: '/docs/architecture/intro',
               },
               {
-                label: 'Backend',
-                to: '/docs/backend/intro',
-              },
-              {
-                label: 'Frontend',
-                to: '/docs/frontend/intro',
+                label: 'Workflow',
+                to: '/docs/workflow-intro',
               },
             ],
           },

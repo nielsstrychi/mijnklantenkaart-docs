@@ -4,29 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Architecture Overview',
+    title: 'Business Analysis',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Explore the overall architecture and system design of MijnKlantenkaart.
+        Explore the business requirements, strategies, and plans for MijnKlantenkaart.
       </>
     ),
   },
   {
-    title: 'Backend Documentation',
+    title: 'Development Docs',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Dive into the Spring Boot backend services and business logic.
+        Dive into the Architecture, Backend, Frontend, API, and Database documentation.
       </>
     ),
   },
   {
-    title: 'Frontend Documentation',
+    title: 'Workflow',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Learn about the Next.js React frontend and user interface components.
+        Learn about the development workflow, AgentOS guidelines, and ticket system.
       </>
     ),
   },
